@@ -6,26 +6,18 @@
   </head>
   <body>
     <div class="container">
-      <img src="image1.jpg" id="image1" onmouseover="mouseOver()" onmouseout="mouseOut()" />
-      <img src="image2.jpg" id="image2" onmouseover="mouseOver()" onmouseout="mouseOut()" />
-      <img src="image3.jpg" id="image3" onmouseover="mouseOver()" onmouseout="mouseOut()" />
-      <img src="image4.jpg" id="image4" onmouseover="mouseOver()" onmouseout="mouseOut()" />
-      <img src="image5.jpg" id="image5" onmouseover="mouseOver()" onmouseout="mouseOut()" />
+      <img src="assets/img/image1.jpg" id="image1" onmouseover="mouseOver(id)" onmouseout="mouseOut(id)" />
+      <img src="assets/img/image2.jpg" id="image2" onmouseover="mouseOver(id)" onmouseout="mouseOut(id)" />
+      <img src="assets/img/image3.jpg" id="image3" onmouseover="mouseOver(id)" onmouseout="mouseOut(id)" />
+      <img src="assets/img/image4.jpg" id="image4" onmouseover="mouseOver(id)" onmouseout="mouseOut(id)" />
+      <img src="assets/img/image5.jpg" id="image5" onmouseover="mouseOver(id)" onmouseout="mouseOut(id)" />
     </div>
     <script>
-    function mouseOver(){
-      document.getElementById("image1").src="image1_2.jpg";
-      document.getElementById("image2").src="image2_2.jpg";
-      document.getElementById("image3").src="image3_2.jpg";
-      document.getElementById("image4").src="image4_2.jpg";
-      document.getElementById("image5").src="image5_2.jpg";
+    function mouseOver(id){
+      document.getElementById(id).src = 'assets/img/' + id + '_2.jpg';
     }
-    function mouseOut(){
-      document.getElementById("image1").src="image1.jpg";
-      document.getElementById("image2").src="image2.jpg";
-      document.getElementById("image3").src="image3.jpg";
-      document.getElementById("image4").src="image4.jpg";
-      document.getElementById("image5").src="image5.jpg";
+    function mouseOut(id){
+      document.getElementById(id).src = 'assets/img/' + id + '.jpg';
     }
     </script>
   </body>
